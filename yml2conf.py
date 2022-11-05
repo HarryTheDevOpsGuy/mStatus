@@ -6,7 +6,6 @@ from jinja2 import Environment, FileSystemLoader
 project_dir = os.path.abspath(os.path.dirname(__file__))
 out_config_dir = os.environ.get('OUT_CONFIG_DIR', '/tmp')
 yml_config_dir = os.environ.get('YML_CONFIG_DIR', project_dir)
-print(project_dir)
 
 def yml2conf(ymlfile, outputfile):
     config_data = yaml.load(open(ymlfile))
