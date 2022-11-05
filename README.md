@@ -5,9 +5,15 @@
 A Powerful utility to Check SSL and Website Status. Get notification instantly if anything goes wrong.
 
 
+# mStatus Version
+ **Version**        : v0.0.4 <br>
+ **Release Date**   : 05-Nov-22 <br>
+
+
 ## Demo
 
-- https://status.statsig.com
+- https://mcloud-platform.github.io/uptime/ - It's public Website uptime Status page
+- https://mcloud-platform.github.io/mcert.html - It's public SSL Certifcate Status page
 
 ## Setup instructions
 
@@ -16,7 +22,7 @@ A Powerful utility to Check SSL and Website Status. Get notification instantly i
 3. commit the changes & raise a pull request.
 4. [![Join our Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/mCloudUptime) Community Group to get alerts.
 
-![image](https://user-images.githubusercontent.com/74588208/121419015-5f4dc200-c920-11eb-9b14-a275ef5e2a19.png)
+![image](https://github.com/HarryTheDevOpsGuy/mStatus/raw/master/assets/Website-status.png)
 
 ## How does it work?
 
@@ -24,10 +30,10 @@ We have integrated this repository with mStatus utility. it will read rule file 
 
 ## Core Features?
 1. SSL Certificate Monitoring
-    it allow you to track SSL Certificate expiration and get notification time to time.
+    - it allow you to track SSL Certificate expiration and get notification time to time.
 2. URL/ Website uptime monitoring
-    Easy to get instant notification if your website goes down.  
+    - Easy to get instant notification if your website goes down.  
 3. Multiple notification modes (Telegram,Slack,Email,etc)
-    Get notification on multiple platform at same time.  
+    - Get notification on multiple platform at same time.  
 4. Free of cost
-    Most of the tool and website charge $10-$30 cost to monitor Website and ssl Certificate. I don't want to spend single penny to monitor my website uptime and ssl certificate. So I have developed this tool in Shell Script and python. We have hosted this tool completely on github. So it's free of cost and it will be forever.
+    - Most of the tool and website charge $10-$30 cost to monitor Website and ssl Certificate. I don't want to spend single penny to monitor my website uptime and ssl certificate. So I have developed this tool in Shell Script and python. We have hosted this tool completely on github. So it's free of cost and it will be forever.
