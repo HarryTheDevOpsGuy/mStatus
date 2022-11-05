@@ -7,63 +7,42 @@ global:
 
 
 notifications:
-   - id: slackid
-     type: slack
-     token: "${MCLOUD_TELEGRAM_TOKEN}"
-     channel: '#mcloud-alerts'
-     mentions:
-        - "@Harry"
-   - id: mcloudtelegram
-     type: telegram
-     bottoken: "${MCLOUD_TELEGRAM_TOKEN}"
-     groupid: '-737229532' # mCloud
-     mentions:
-        - "@HarryTheDevOpsGuy"
+  - id: slackid
+    type: slack
+    token: "${MCLOUD_TELEGRAM_TOKEN}"
+    channel: '#mcloud-alerts'
+    mentions:
+      - "@Harry"
 
-   - id: mCloudUptime
-     type: telegram
-     bottoken: "${MCLOUD_TELEGRAM_TOKEN}"
-     groupid: '-1001225113709'
-     groupname: 'mCloud-Uptime'
-     mentions:
-        - "@HarryTheDevOpsGuy"
+  - id: mCloudUptime
+    type: telegram
+    bottoken: "${MCLOUD_TELEGRAM_TOKEN}"
+    groupid: '-1001225113709'
+    groupname: 'mCloud-Uptime'
+    mentions:
+      - "@HarryTheDevOpsGuy"
 
-   - id: email
-     type: sendgrid
-     sender: mcloudautomation@gmail.com
-     token: "${MCLOUD_SENDGRID_API_KEY}"
-     email:
-       - harrythedevopsguy@gmail.com
-  #  - id: ifemail
-  #    type: sendgrid
-  #    sender: mcloudautomation@gmail.com
-  #    token: "${MCLOUD_SENDGRID_API_KEY}"
-  #    email:
-  #      - innovativefolks@gmail.com
-  #      - harrythedevopsguy@gmail.com
-
-  #  - id: shaniemail
-  #    type: sendgrid
-  #    sender: mcloudautomation@gmail.com
-  #    token: "${MCLOUD_SENDGRID_API_KEY}"
-  #    email:
-  #      - sanjoodevimaurya@gmail.com
-  #      - harrythedevopsguy@gmail.com
-
-   - id: shanitelegram
-     type: telegram
-     bottoken: "${MCLOUD_TELEGRAM_TOKEN}"
-     groupid: '-710137744' # mcloud-ocs
-     mentions:
-        - "@HarryTheDevOpsGuy"
-        - "@Shani"
-
-   - id: tg_chandan
-     type: telegram
-     bottoken: "${MCLOUD_TELEGRAM_TOKEN}"
-     groupid: '1535115412' # chandan
-     mentions:
-        - "@HarryTheDevOpsGuy"
+  - id: email
+    type: sendgrid
+    sender: mcloudautomation@gmail.com
+    token: "${MCLOUD_SENDGRID_API_KEY}"
+  #   email:
+  #     - youremail@gmail.com
+  #
+  # - id: mcloudtelegram
+  #   type: telegram
+  #   bottoken: "${MCLOUD_TELEGRAM_TOKEN}"
+  #   groupid: '-737229532' # mCloud
+  #   mentions:
+  #     - "@HarryTheDevOpsGuy"
+  #
+  # - id: ifemail
+  #   type: sendgrid
+  #   sender: mcloudautomation@gmail.com
+  #   token: "${MCLOUD_SENDGRID_API_KEY}"
+  #   email:
+  #     - email1@gmail.com
+  #     - email2@gmail.com
 
 
 certificate:
@@ -74,13 +53,10 @@ certificate:
         - mCloudUptime
       domains:
          - https://facebook.com
-         - https://ci-mcloud.herokuapp.com
          - https://www.youtube.com/about
          - https://www.findbestopensource.com/home
          - https://harrythedevopsguy.github.io/mwatcher-403.html
       reminder: 50
-      email:
-         - harrythedevopsguy@gmail.com
 
 probes:
   - id: CommonProbes
@@ -90,166 +66,25 @@ probes:
     timeout: 10
     repeat_interval: 120 # in minutes.
     notification:
-      # - slackid
       - mCloudUptime
-    email:
-      - harrythedevopsguy@gmail.com
+    #   - slackid
+    #   - email
+    # email:
+    #   - harry@gmail.com
     urls:
       - https://web-services.co.in/
       - https://www.codexera.com/
       - https://www.xpresswebsolutions.com/
-      - https://www.onlinefront.in/
-      - https://webgrowsolution.com/
-      - https://www.acnosoft.com/
-      - https://roctics.com/
-      - https://www.codeyiizen.com/
-      - https://www.oms-infotech.in/
-      - https://www.adisoftronics.in/
-      - https://webnethub.com/
-      - https://www.p3soft.in/
-      - https://udayinfotech.com/
-      - https://www.chahartechnologies.com/
-      - https://www.maishainfotech.com/
-      - https://www.getmecab.com/
-      - https://delhitaxiservices.in/
-      - https://bharatbills.com/
-      - https://www.qpos.co.in/
-      - https://posgst.com/
-      - https://indussoft.in/
-      - https://www.sam-erp.com/
-      - https://www.bustrawler.com/
-      - https://www.anytimebooking.in/
-      - https://www.zapbooking.com/
-      - http://ysvweb.co.in/
-      - https://www.webuthink.net/
-      - 'https://www.mydailytutorials.com/'
-      - 'https://adamtheautomator.com'
-      - https://phoenixnap.com/
-      - https://www.linuxhelp.com/
-      # - https://ci-mcloud.herokuapp.com/
-      - https://www.middlewareinventory.com/
-      - https://www.innovativefolks.com
-      - https://www.flipkart.com/
-      - https://theadvocate.co.in/
-      - https://www.shadowinfosystem.com/
-      - https://planetwebit.com/
-      - http://appsitsolution.com/
-      - https://zivost.com/
-      # - http://www.simpliitsolutions.com/
-      - https://www.acpitzone.com/
-      - http://effectivesoftware.in/
-      - https://corewave.io/
-      - https://www.rashienterprises.info/
-      - https://www.teknikoglobal.com/
-      - http://www.etaipl.in/
-      - https://www.acnosoft.com/
-      - https://www.emvsoftwares.com/
-      - https://techsamadhan.in/
-      - https://softlabx.com/
-      - https://nexgitsolutions.in/
-      - https://www.perfectkode.com/
-      - https://www.mappoid.com/
-      - https://www.globalsolutionit.com/
-      - https://bridgetechnosoft.com/
-      - https://axissoftwaresolutions.com/
-      - https://www.pacts.in/
-      - http://www.sky-infratech.in/
-      - https://bloatware.in/
-      - https://stegit.in/
-      - https://bloatware.in/
-      - http://amazesoftwaretech.com/
-      - https://hitechsoftservices.com/
-      - https://easysolutions360.com/
-      - https://www.defuzed.in/
-      - https://www.sysfosolutions.com/
-      - https://www.webpaceindia.com/
-      - https://www.web4u.in/
-      - https://aaryawebsolution.in/
-      - https://designingkeeda.com
-      - http://www.sriramsoft.com/
-      - https://www.samwebstudio.com/
-      - https://digitaldezire.com/
-      - https://www.webworldtechnologies.in/
-      - https://amityedgesolutions.com
-      - http://www.webdesigndeveloperdelhi.com/
-      - https://www.codeger.com/
-      - https://netcreator.co.in/
-      - https://unitedwebsoft.in/
-      - https://www.webworldeasy.com/
-      - https://www.web-players.co.in/
-      - https://www.websolutioncentre.com/
-      - https://vacnic.com/
-      - https://www.cyberworx.in/
-      - https://www.mydigitalhp.com/
-      - https://www.webstrendy.com/
-      - https://www.omniscientitsolutions.com/
-      - https://megatasktechnologies.com/
-      - https://bytosoft.com/
-      - https://tekosep.com/
-      - https://www.dunzo.com/
-      - https://www.savaari.com/
-      - https://rajputanacabs.in
-      - https://www.frugivore.in/
-      # - https://www.ondoor.com/
-      - https://freshlist.in/
-      - https://starbazaarindia.com/
-      - https://www.kolkatabazar.co.in/
-      - https://www.mercato.com/
-      - https://www.kiranamarket.com/
-      - https://www.idea2reality.tech
 
-  - id: MainProbes
-    name: MyWebsite Monitoring
-    description: Monitor multiple website2
-    publish: 'false'
-    repeate_interval: 60
-    timeout: 10
-    notification:
-      - slackid
-      - mcloudtelegram
-      - email
-    urls:
-      - https://loadtraxs.com
-
-  - id: IfProbes
-    name: MyWebsite Monitoring
-    repeate_interval: 240
-    notification:
-      - slackid
-      - mcloudtelegram
-      - tg_chandan
-      - email
-    email:
-      - innovativefolks@gmail.com
-    urls:
-      - https://www.innovativefolks.com
-
-  - id: ShaniProbes
-    name: MyWebsite Monitoring
-    repeate_interval: 240
-    timeout: 10
-    notification:
-      # - slackid
-      # - mcloudtelegram
-      - shanitelegram
-#       - email
-    email:
-      - sanjoodevimaurya@gmail.com
-    urls:
-      - https://csstricks.in/index.html
-      - https://ocswebexperts.com
-      - https://basicshikshakhabar.in
-
-  - id: TheVSP
-    name: TheVSP
-    repeate_interval: 240
-    timeout: 10
-    notification:
-      - mcloudtelegram
-      - email
-      - mCloudUptime
-    email:
-      - thevspassociates@gmail.com
-      - harrythedevopsguy@gmail.com
-    urls:
-      - http://thevsp.in/
+  # - id: MainProbes
+  #   name: MyWebsite Monitoring
+  #   description: Monitor multiple website2
+  #   publish: 'false'
+  #   repeate_interval: 60
+  #   timeout: 10
+  #   notification:
+  #     - slackid
+  #     - mcloudtelegram
+  #     - email
+  #   urls:
+  #     - https://google.com
