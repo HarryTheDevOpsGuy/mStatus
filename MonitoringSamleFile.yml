@@ -9,20 +9,20 @@ global:
 notifications:
    - id: slackid
      type: slack
-     token: "${mcloud_slack_token}"
+     token: "${MCLOUD_TELEGRAM_TOKEN}"
      channel: '#mcloud-alerts'
      mentions:
         - "@Harry"
    - id: mcloudtelegram
      type: telegram
-     bottoken: "${mcloud_telegram_token}"
+     bottoken: "${MCLOUD_TELEGRAM_TOKEN}"
      groupid: '-737229532' # mCloud
      mentions:
         - "@HarryTheDevOpsGuy"
 
    - id: mCloudUptime
      type: telegram
-     bottoken: "${mcloud_telegram_token}"
+     bottoken: "${MCLOUD_TELEGRAM_TOKEN}"
      groupid: '-1001225113709'
      groupname: 'mCloud-Uptime'
      mentions:
@@ -31,13 +31,13 @@ notifications:
    - id: email
      type: sendgrid
      sender: mcloudautomation@gmail.com
-     token: "{{ mcloud_sendgrid_apikey }}"
+     token: "${MCLOUD_SENDGRID_API_KEY}"
      email:
        - harrythedevopsguy@gmail.com
   #  - id: ifemail
   #    type: sendgrid
   #    sender: mcloudautomation@gmail.com
-  #    token: "{{ mcloud_sendgrid_apikey }}"
+  #    token: "${MCLOUD_SENDGRID_API_KEY}"
   #    email:
   #      - innovativefolks@gmail.com
   #      - harrythedevopsguy@gmail.com
@@ -45,14 +45,14 @@ notifications:
   #  - id: shaniemail
   #    type: sendgrid
   #    sender: mcloudautomation@gmail.com
-  #    token: "{{ mcloud_sendgrid_apikey }}"
+  #    token: "${MCLOUD_SENDGRID_API_KEY}"
   #    email:
   #      - sanjoodevimaurya@gmail.com
   #      - harrythedevopsguy@gmail.com
 
    - id: shanitelegram
      type: telegram
-     bottoken: "${mcloud_telegram_token}"
+     bottoken: "${MCLOUD_TELEGRAM_TOKEN}"
      groupid: '-710137744' # mcloud-ocs
      mentions:
         - "@HarryTheDevOpsGuy"
@@ -60,7 +60,7 @@ notifications:
 
    - id: tg_chandan
      type: telegram
-     bottoken: "${mcloud_telegram_token}"
+     bottoken: "${MCLOUD_TELEGRAM_TOKEN}"
      groupid: '1535115412' # chandan
      mentions:
         - "@HarryTheDevOpsGuy"

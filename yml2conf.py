@@ -2,14 +2,17 @@
 import os
 import yaml
 from jinja2 import Environment, FileSystemLoader
+
+project_dir = os.path.abspath(os.path.dirname(__file__))
 out_config_dir = os.environ.get('OUT_CONFIG_DIR', '/tmp')
-yml_config_dir = os.environ.get('YML_CONFIG_DIR', '.')
+yml_config_dir = os.environ.get('YML_CONFIG_DIR', project_dir)
+print(project_dir)
 
 def yml2conf(ymlfile, outputfile):
     config_data = yaml.load(open(ymlfile))
     # Load templates file from templtes folder
-    env = Environment(loader = FileSystemLoader('./templates'),   trim_blocks=True, lstrip_blocks=True)
-    template = env.get_template('config_tmpl.py')
+    env = Environment(loader = FileSystemLoader(project_dir + '/templates'),  trim_blocks=True, lstrip_blocks=True)
+    template = env.get_template(project_dir + '/config_tmpl.py')
     config_out= template.render(config_data)
     # Write file in configfile
     outputfile_path="{0}/{1}_config.sh".format(out_config_dir, outputfile)
