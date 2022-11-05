@@ -9,20 +9,20 @@ global:
 notifications:
    - id: slackid
      type: slack
-     token: "{{ mcloud_slack_token }}"
+     token: "${mcloud_slack_token}"
      channel: '#mcloud-alerts'
      mentions:
         - "@Harry"
    - id: mcloudtelegram
      type: telegram
-     bottoken: "{{ mcloud_telegram_token }}"
+     bottoken: "${mcloud_telegram_token}"
      groupid: '-737229532' # mCloud
      mentions:
         - "@HarryTheDevOpsGuy"
 
    - id: mCloudUptime
      type: telegram
-     bottoken: "{{ mcloud_telegram_token }}"
+     bottoken: "${mcloud_telegram_token}"
      groupid: '-1001225113709'
      groupname: 'mCloud-Uptime'
      mentions:
@@ -52,7 +52,7 @@ notifications:
 
    - id: shanitelegram
      type: telegram
-     bottoken: "{{ mcloud_telegram_token }}"
+     bottoken: "${mcloud_telegram_token}"
      groupid: '-710137744' # mcloud-ocs
      mentions:
         - "@HarryTheDevOpsGuy"
@@ -60,7 +60,7 @@ notifications:
 
    - id: tg_chandan
      type: telegram
-     bottoken: "{{ mcloud_telegram_token }}"
+     bottoken: "${mcloud_telegram_token}"
      groupid: '1535115412' # chandan
      mentions:
         - "@HarryTheDevOpsGuy"
