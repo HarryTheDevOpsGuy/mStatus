@@ -301,7 +301,7 @@ git_update(){
     git config --global user.name 'mCloud-Platform'
     git config --global user.email 'mCloudAutomation@gmail.com'
     git add -A --force logs/. urls.cfg ../mcert.html
-    git commit -am '[Automated] ${GITHUB_JOB} - Update Health Check Logs'
+    git commit -am "[Automated] ${GITHUB_JOB} - Update Health Check Logs"
     git push
   fi
 }
