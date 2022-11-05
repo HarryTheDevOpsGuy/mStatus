@@ -3,7 +3,6 @@ GIT_COMMIT="true"
 keepLogLines=200
 email_tmpl="/tmp/email.html"
 
-env
 
 YELLOW='\033[0;33m'
 NC='\033[0m' # No Color
