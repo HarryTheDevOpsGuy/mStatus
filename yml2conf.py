@@ -20,7 +20,6 @@ def yml2conf(ymlfile, outputfile):
         f.write(config_out)
 
 
-
 if __name__ == "__main__":
     for filename in os.listdir(yml_config_dir):
         dsplit = os.path.splitext(filename)

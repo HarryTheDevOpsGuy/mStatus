@@ -2,7 +2,6 @@ uid={{ global.uid|default('mcloud') }}
 timeout={{ global.timeout|default('3') }}
 keepLogLines={{ global.keeploglines|default('300') }}
 
-env
 
 declare -A NOTIFICATIONS=(
 {% for item in notifications %}
