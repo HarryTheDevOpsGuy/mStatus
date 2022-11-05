@@ -23,6 +23,6 @@ declare -A CERTS=(
 
 declare -A PROBES=(
 {% for p in probes %}
-  [{{ p.id }}]="{{ p.publish | default('false') }}|{{ p.timeout | default('5') }}|{% for nid in p.notification %}{{ nid }}{% if not loop.last %} {% endif %}{% endfor %}|{{ p.repeate_interval | default('180') }}|{% for url in p.urls %}{{ url }}{% if not loop.last %} {% endif %}{% endfor %}|{% for email in p.email|default('[]') %}{{ email }}{% if not loop.last %} {% endif %}{% endfor %}"
+  [{{ p.id }}-{{ loop.index }}]="{{ p.publish | default('false') }}|{{ p.timeout | default('5') }}|{% for nid in p.notification %}{{ nid }}{% if not loop.last %} {% endif %}{% endfor %}|{{ p.repeate_interval | default('180') }}|{% for url in p.urls %}{{ url }}{% if not loop.last %} {% endif %}{% endfor %}|{% for email in p.email|default('[]') %}{{ email }}{% if not loop.last %} {% endif %}{% endfor %}"
 {% endfor %}
 )
