@@ -1,7 +1,11 @@
-uid={{ global.uid|default('mcloud') }}
-timeout={{ global.timeout|default('3') }}
-keepLogLines={{ global.keeploglines|default('300') }}
-request_tracing=false
+# uid={{ global.uid|default('mcloud') }}
+# timeout={{ global.timeout|default('3') }}
+# keepLogLines={{ global.keeploglines|default('300') }}
+# request_tracing=false
+
+{% for key, value in global.iteritems() %}
+{{ key }}={{ value }}
+{% endfor %}
 
 
 declare -A NOTIFICATIONS=(
