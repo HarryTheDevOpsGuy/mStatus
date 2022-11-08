@@ -4,6 +4,8 @@ global:
   timeout: 10
   repeat_interval: 30
   keeploglines: 500
+  request_tracing: false
+
 
 
 notifications:

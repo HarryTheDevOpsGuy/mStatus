@@ -1,6 +1,7 @@
 uid={{ global.uid|default('mcloud') }}
 timeout={{ global.timeout|default('3') }}
 keepLogLines={{ global.keeploglines|default('300') }}
+request_tracing=false
 
 
 declare -A NOTIFICATIONS=(
