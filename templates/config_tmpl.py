@@ -1,7 +1,4 @@
-# uid={{ global.uid|default('mcloud') }}
-# timeout={{ global.timeout|default('3') }}
-# keepLogLines={{ global.keeploglines|default('300') }}
-# request_tracing=false
+#!/usr/bin/env bash
 
 {% for key, value in global.items() %}
 {{ key }}={{ value }}
