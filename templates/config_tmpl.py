@@ -3,7 +3,7 @@
 # keepLogLines={{ global.keeploglines|default('300') }}
 # request_tracing=false
 
-{% for key, value in global.iteritems() %}
+{% for key, value in global.items() %}
 {{ key }}={{ value }}
 {% endfor %}
 
