@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 {% for key, value in global.items() %}
-{{ key }}={{ value }}
+{{ key }}="{{ value }}"
 {% endfor %}
 
 
