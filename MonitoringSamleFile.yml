@@ -80,6 +80,7 @@ probes:
       - https://web-services.co.in/
       - https://www.codexera.com/
       - https://www.xpresswebsolutions.com/
+      - https://www.omniscientitsolutions.com/
 
   # - id: MainProbes
   #   name: MyWebsite Monitoring
