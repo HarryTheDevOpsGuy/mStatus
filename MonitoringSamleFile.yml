@@ -21,8 +21,8 @@ notifications:
     bottoken: "${MCLOUD_TELEGRAM_TOKEN}"
     groupid: '-1001225113709'
     groupname: 'mCloud-Uptime'
-    mentions:
-      - "@HarryTheDevOpsGuy"
+    # mentions:
+    #   - "@HarryTheDevOpsGuy"
 
   - id: email
     type: sendgrid
