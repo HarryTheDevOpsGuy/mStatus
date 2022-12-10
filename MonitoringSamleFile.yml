@@ -73,6 +73,9 @@ probes:
     #   - email
     # email:
     #   - harry@gmail.com
+    tgmentions:
+      - ExpertSatya
+      - opthakur
     urls:
       - https://web-services.co.in/
       - https://www.codexera.com/
