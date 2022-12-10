@@ -8,9 +8,9 @@
 declare -A NOTIFICATIONS=(
 {% for item in notifications %}
 {% if item.type == 'slack' %}
-  [{{ item.id }}]="slack|{{ item.token }}|{{ item.channel }}|{% for mentions in item.mentions %}{{ mentions }}{% if not loop.last %} {% endif %}{% endfor %}"
+  [{{ item.id }}]="slack|{{ item.token }}|{{ item.channel }}|{% for mentions in item.mentions|default('[]')  %}{{ mentions }}{% if not loop.last %} {% endif %}{% endfor %}"
 {% elif item.type == 'telegram' %}
-  [{{ item.id }}]="telegram|{{ item.bottoken }}|{{ item.groupid }}|{% for mentions in item.mentions %}{{ mentions }}{% if not loop.last %} {% endif %}{% endfor %}"
+  [{{ item.id }}]="telegram|{{ item.bottoken }}|{{ item.groupid }}|{% for mentions in item.mentions|default('[]') %}{{ mentions }}{% if not loop.last %} {% endif %}{% endfor %}"
 {% elif item.type == 'sendgrid' %}
   [{{ item.id }}]="sendgrid|{{ item.token }}|{{ item.sender }}|{% for email in item.email|default('[]') %}{{ email }}{% if not loop.last %} {% endif %}{% endfor %}"
 {% endif %}
