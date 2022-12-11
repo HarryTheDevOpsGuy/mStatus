@@ -47,18 +47,18 @@ notifications:
   #     - email2@gmail.com
 
 
-certificate:
-    - id: commonssl
-      name: SSLCert Monitor
-      notification:
-        - slackid
-        - mCloudUptime
-      domains:
-         - https://facebook.com
-         - https://www.youtube.com/about
-         - https://www.findbestopensource.com/home
-         - https://harrythedevopsguy.github.io/mwatcher-403.html
-      reminder: 50
+# certificate:
+#     - id: commonssl
+#       name: SSLCert Monitor
+#       notification:
+#         - slackid
+#         - mCloudUptime
+#       domains:
+#          - https://facebook.com
+#          - https://www.youtube.com/about
+#          - https://www.findbestopensource.com/home
+#          - https://harrythedevopsguy.github.io/mwatcher-403.html
+#       reminder: 50
 
 probes:
   - id: CommonProbes
@@ -69,18 +69,17 @@ probes:
     repeat_interval: 120 # in minutes.
     notification:
       - mCloudUptime
-    #   - slackid
-    #   - email
-    # email:
-    #   - harry@gmail.com
-    tgmentions:
-      - '@ExpertSatya'
-      - '@opthakur'
+#       - slackid
+#       - email
+#     email:
+#       - harry@gmail.com
+#     tgmentions:
+#       - '@ExpertSatya'
+#       - '@opthakur'
     urls:
       - https://web-services.co.in/
       - https://www.codexera.com/
       - https://www.xpresswebsolutions.com/
-      - https://www.omniscientitsolutions.com/
 
   # - id: MainProbes
   #   name: MyWebsite Monitoring
