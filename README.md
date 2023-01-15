@@ -6,14 +6,14 @@ A Powerful utility to Check SSL and Website Status. Get notification instantly i
 
 
 # mStatus Version
- **Version**        : v0.1.3 <br>
+ **Version**        : v0.1.4 <br>
  **Release Date**   : 15-Jan-23 <br>
 
 
 ## Demo
 
-- https://mcloud-platform.github.io/uptime/ - It's public Website uptime Status page
-- https://mcloud-platform.github.io/mcert.html - It's public SSL Certifcate Status page
+- https://mstatus.onrender.com/uptime/ - It's public Website uptime Status page
+- https://mstatus.onrender.com/mcert.html - It's public SSL certificate Status page
 
 ## Setup instructions
 
