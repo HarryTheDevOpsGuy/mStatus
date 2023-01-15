@@ -6,7 +6,7 @@ A Powerful utility to Check SSL and Website Status. Get notification instantly i
 
 
 # mStatus Version
- **Version**        : v0.1.4 <br>
+ **Version**        : v0.1.5 <br>
  **Release Date**   : 15-Jan-23 <br>
 
 
@@ -15,7 +15,14 @@ A Powerful utility to Check SSL and Website Status. Get notification instantly i
 - https://mstatus.onrender.com/uptime/ - It's public Website uptime Status page
 - https://mstatus.onrender.com/mcert.html - It's public SSL certificate Status page
 
-## Setup instructions
+## Start Monitor Website and SSL Certificate
+1. Open your Telegram and search @mWatcherBot
+2. Start chat and send common `/monitor`
+3. you will get help page. Read this help page.
+4. Send this message to @mWatcherBot bot: `/monitor https://google.com https://facebook.com/`
+5. Done. 
+
+#### Alternative method :
 
 1. Fork the [template repository](https://github.com/HarryTheDevOpsGuy/mStatus).
 2. Rename `MonitoringSamleFile.yml` & update the configurations accordingly.
