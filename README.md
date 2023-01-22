@@ -6,8 +6,8 @@ A Powerful utility to Check SSL and Website Status. Get notification instantly i
 
 
 # mStatus Version
- **Version**        : v0.1.5 <br>
- **Release Date**   : 15-Jan-23 <br>
+ **Version**        : v0.1.6 <br>
+ **Release Date**   : 22-Jan-23 <br>
 
 
 ## Demo
